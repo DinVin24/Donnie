@@ -6,10 +6,10 @@ int main()
     window.setFramerateLimit(60);
 
     sf::Texture texture("hole.jpg", false, sf::IntRect({0, 0}, {800, 600})); // Throws sf::Exception if an error occurs
-    sf::Texture donnie_image("donnie.jpg", false, sf::IntRect({0, 0}, {50, 50}));
+    sf::Texture donnie_image("donsprite.png", false, sf::IntRect({0, 0}, {87, 51}));
     sf::Sprite sprite(texture);
 
-    Dog donnie(donnie_image,{100.f,400.f});
+    Dog donnie(donnie_image,{100.f,300.f});
     sf::Clock clock;
 
     std::vector<Wall> walls;
@@ -25,9 +25,7 @@ int main()
         }
         float deltaTime = clock.restart().asSeconds();
 
-        donnie.handleInput();
-        checkCollisions(donnie,walls);
-       donnie.update(deltaTime);
+        donnie.update(deltaTime,walls);
 
         window.clear();
 

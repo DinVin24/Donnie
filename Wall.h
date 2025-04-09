@@ -23,6 +23,9 @@ public:
     sf::FloatRect getBounds() const {
         return shape.getGlobalBounds();  // Return bounding box of the wall
     }
+    sf::Vector2f getPosition() const {
+        return shape.getPosition();
+    }
 };
 
 #endif
