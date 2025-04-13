@@ -12,7 +12,6 @@ int main()
     sf::View view(sf::FloatRect({0.f, 0.f}, {800.f, 600.f}));//ASTA-I PT SCROLLING VIEW
     window.setView(view);
 
-
     Dog donnie(donnie_image,{100.f,300.f});
     sf::Clock clock;
     std::vector<Wall> walls;
