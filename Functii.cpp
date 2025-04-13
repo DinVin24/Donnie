@@ -61,7 +61,7 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
         sf::FloatRect dbounds = getBounds();
         sf::FloatRect wbounds = wall.getBounds();
         if (dbounds.findIntersection(wbounds)) {
-            std::cout<<"COLLISIION ";
+            std::cout<<"COLLISIION \n";
             if(direction.x == -1){
                 // std::cout<<"left\n";
                 direction.x = 0;

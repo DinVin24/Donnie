@@ -5,23 +5,22 @@
 
 class Wall {
 private:
-    sf::RectangleShape shape;  // Wall represented as a rectangle
+    sf::RectangleShape shape;
 
 public:
     Wall(sf::Vector2f position, sf::Vector2f size) {
-        shape.setSize(size);          // Set size of the wall
-        shape.setPosition(position);  // Set position of the wall
-        shape.setFillColor(sf::Color::Red);  // You can change the color
+        shape.setSize(size);
+        shape.setPosition(position);
+        shape.setFillColor(sf::Color::Red);  //SCHIMBA MAI TARZIU INTR-O TEXTURA PLS
     }
 
     // Draw the wall
     void draw(sf::RenderWindow& window) {
-        window.draw(shape);  // Render the wall on screen
+        window.draw(shape);
     }
 
-    // Get the bounds of the wall for collision detection
     sf::FloatRect getBounds() const {
-        return shape.getGlobalBounds();  // Return bounding box of the wall
+        return shape.getGlobalBounds();
     }
     sf::Vector2f getPosition() const {
         return shape.getPosition();

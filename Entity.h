@@ -19,7 +19,9 @@ public:
         sprite.move(velocity * deltaTime);
     }
     virtual void fall(){}
-
+    void setTexture(const sf::Texture& texture) {
+        sprite.setTexture(texture);
+    }
     virtual void draw(sf::RenderWindow& window) {
         window.draw(sprite);
     }
