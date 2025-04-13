@@ -4,8 +4,10 @@
 #include "Wall.h"
 class Dog : public Entity {
 private:
+
     sf::Vector2f velocity;
-    float speed = 200.f;
+    float speed = 300.f;
+    float jumpHeight = 600.f;
     struct dir{
         int x=0,y=1;
     }direction;

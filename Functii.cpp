@@ -1,22 +1,24 @@
 #include <SFML/Graphics.hpp>
 #include "Dog.h"
 #include "Wall.h"
+#include "TestLevel.h"
 #include <iostream>
 #include "SFML/Audio/Listener.hpp"
 bool Dog::onGround(const std::vector<Wall>& walls) {
     sf::FloatRect dbounds = getBounds();
+    bool stanga = false, dreapta = false;
     for (const Wall& wall:walls) {
         sf::FloatRect wbounds = wall.getBounds();
-        if ((dbounds.position.x >= wbounds.position.x && dbounds.position.x <= wbounds.position.x + wbounds.size.x) &&
-            dbounds.position.x + dbounds.size.x <= wbounds.position.x + wbounds.size.x &&
-    ///AAAAH MODIFICA CONDITIILE DE AICI CA TE CONTRAZICI
-
-            dbounds.position.y+dbounds.size.y >= wbounds.position.y - 2) {
-            // std::cout<<dbounds.position.y+dbounds.size.y<<' '<<wbounds.position.y<<'\n';
-            return true;
+        for (float x = dbounds.position.x; x <= dbounds.position.x+dbounds.size.x;x++) {
+            if (wbounds.position.y + 1 >= dbounds.position.y + dbounds.size.y &&
+                wbounds.position.y - 2 <= dbounds.position.y + dbounds.size.y &&
+                x >= wbounds.position.x && x <= wbounds.position.x + wbounds.size.x ) {
+                return true;
+            }
         }
     }
     return false;
+
 }
 void Dog::handleInput(const std::vector<Wall>& walls)  {
 //cu functia asta miscam cainele
@@ -34,7 +36,7 @@ void Dog::handleInput(const std::vector<Wall>& walls)  {
         bothPressed ++;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && onGround(walls)) {
-        velocity.y = -800.f;
+        velocity.y = -jumpHeight;
         direction.y = -1;
         momentum = sf::seconds(0.30f);//cat dureaza un salt
     }
@@ -96,4 +98,14 @@ void Dog::update(float deltaTime, const std::vector<Wall>& walls) {
     checkCollisions(walls);
     if (velocity.x!=debugx || velocity.y!=debugy)
         std::cout<<"VELOCITY: "<<velocity.x<<"    "<<velocity.y<<std::endl;
+}
+sf::View update(sf::View view, Dog dog) {
+    int window_height = 600;
+    int window_width = 800;
+    struct {int x=2000,y=800;}level_size;//hardcodat for testing purposes
+    if (dog.getPosition().x >= window_width / 2 )
+        view.setCenter({dog.getPosition().x,window_height / 2});
+    if (dog.getPosition().x >= level_size.x - window_width / 2 )
+        view.setCenter({level_size.x - window_width / 2, window_height / 2});
+    return view;
 }
