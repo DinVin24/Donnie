@@ -35,12 +35,10 @@
 #include "Nivele.h"
 class TestLevel : public Nivele {
 public:
-    TestLevel() {
-        load();
-    }
 
     void load() override {
         //AICI IMI SPAWNEZ INAMICI, CAINE, ZIDURI
+        backgroundTexture.loadFromFile("hole.jpg");
         dog->setPosition({200,200});
         walls.push_back(Wall({0,500},{1600,100}));
     }

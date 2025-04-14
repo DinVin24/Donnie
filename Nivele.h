@@ -1,7 +1,7 @@
 class Nivele {
 protected:
     std::vector<Wall> walls;
-    sf::Texture wallTexture, enemyTexture, dogTexture;
+    sf::Texture wallTexture, enemyTexture, dogTexture,backgroundTexture;
     Dog* dog;
 
 public:
@@ -13,4 +13,5 @@ public:
     virtual void update(float dt) = 0;
     virtual void draw(sf::RenderWindow& window) = 0;
     virtual bool isComplete() const = 0; // used to check if we move to the next level
+    virtual sf::Texture& getBackground(){return backgroundTexture;}
 };

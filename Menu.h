@@ -1,40 +1,31 @@
-class MenuLevel : public Level {
-private:
-    sf::Font font;
-    sf::Text title;
-    sf::Text startOption;
-    bool readyToStart = false;
-
+#include <SFML/Graphics.hpp>
+class Menu : public Nivele {
 public:
-    MenuLevel() {
-        font.loadFromFile("arial.ttf"); // Or your own font
-        title.setFont(font);
-        title.setString("Donnie the Doggie");
-        title.setCharacterSize(48);
-        title.setPosition(200.f, 150.f);
 
-        startOption.setFont(font);
-        startOption.setString("Press Enter to Start");
-        startOption.setCharacterSize(24);
-        startOption.setPosition(250.f, 300.f);
+    void load() override {
+        backgroundTexture.loadFromFile("menu.jpg");
+        dog->setPosition({400, 300});
+        walls.push_back(Wall({0, 600}, {800, 2}));
+        walls.push_back(Wall({-4,0},{4,600}));
+        walls.push_back(Wall({800,0},{4,600}));
     }
 
     void handleInput() override {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
-            readyToStart = true;
-        }
+        dog->handleInput(walls);
     }
 
-    void update(float) override {}
+    void update(float dt) override {
+        dog->update(dt, walls);
+    }
 
     void draw(sf::RenderWindow& window) override {
-        window.draw(title);
-        window.draw(startOption);
+        for (auto& wall : walls)
+            wall.draw(window);
+        dog->draw(window);
     }
 
     bool isComplete() const override {
-        return readyToStart;
+        return dog->getPosition().x > 800;
     }
-
-    void setDog(Dog&) override {} // Not needed here
+    sf::Texture& getBackground(){return this->backgroundTexture;}
 };
