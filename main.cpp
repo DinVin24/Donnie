@@ -5,9 +5,6 @@
 int main() {
     sf::RenderWindow window(sf::VideoMode({800, 600}), "Donnie the Doggie");
     window.setFramerateLimit(60);
-    // sf::Texture texture("hole.jpg", false, sf::IntRect({0, 0}, {1200, 600})); // Throws sf::Exception if an error occurs
-    // sf::Sprite backgroundSprite(texture);
-
     sf::Texture donnie_image("donsprite.png", false, sf::IntRect({0, 0}, {87, 51}));
 
     sf::View view(sf::FloatRect({0.f, 0.f}, {800.f, 600.f}));
@@ -24,12 +21,12 @@ int main() {
 
     while (window.isOpen()) {
         while (const std::optional event = window.pollEvent()) {
-            if (event->is<sf::Event::Closed>())
+            if (event->is<sf::Event::Closed>() || currentLevel->getExit())
                 window.close();
         }
         float deltaTime = clock.restart().asSeconds();
         //input
-        currentLevel->handleInput();
+        currentLevel->handleInput(window);
 
         //update
         currentLevel->update(deltaTime);

@@ -34,16 +34,17 @@
 // };
 #include "Nivele.h"
 class TestLevel : public Nivele {
+    bool exit = false;
 public:
 
     void load() override {
         //AICI IMI SPAWNEZ INAMICI, CAINE, ZIDURI
         backgroundTexture.loadFromFile("hole.jpg");
         dog->setPosition({200,200});
-        walls.push_back(Wall({0,500},{1600,100}));
+        walls.push_back(Wall({0,600},{1600,100}));
     }
 
-    void handleInput() override {
+    void handleInput(sf::RenderWindow &window) override {
         dog->handleInput(walls);
     }
 

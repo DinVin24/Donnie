@@ -10,7 +10,7 @@ bool Dog::onGround(const std::vector<Wall>& walls) {
     bool stanga = false, dreapta = false;
     for (const Wall& wall:walls) {
         sf::FloatRect wbounds = wall.getBounds();
-        for (float x = dbounds.position.x; x <= dbounds.position.x+dbounds.size.x;x++) {
+        for (float x = dbounds.position.x; x <= dbounds.position.x+dbounds.size.x;x ++) {
             if (wbounds.position.y + 1 >= dbounds.position.y + dbounds.size.y &&
                 wbounds.position.y - 2 <= dbounds.position.y + dbounds.size.y &&
                 x >= wbounds.position.x && x <= wbounds.position.x + wbounds.size.x ) {

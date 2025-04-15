@@ -1,5 +1,7 @@
 #include <SFML/Graphics.hpp>
+
 class Menu : public Nivele {
+    bool exit=false,start=false;
 public:
 
     void load() override {
@@ -10,8 +12,15 @@ public:
         walls.push_back(Wall({800,0},{4,600}));
     }
 
-    void handleInput() override {
+    void handleInput(sf::RenderWindow& window) override {
+        sf::IntRect s ({321,312},{170,81});
+        sf::IntRect e ({350,430},{108,67});
         dog->handleInput(walls);
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
+            sf::Vector2i poz = sf::Mouse::getPosition(window);
+            if (e.contains(poz)) exit = true;
+            if (s.contains(poz)) start = true;
+        }
     }
 
     void update(float dt) override {
@@ -25,7 +34,7 @@ public:
     }
 
     bool isComplete() const override {
-        return dog->getPosition().x > 800;
+        return start;
     }
     sf::Texture& getBackground(){return this->backgroundTexture;}
 };
