@@ -42,6 +42,7 @@ public:
         backgroundTexture.loadFromFile("hole.jpg");
         dog->setPosition({200,200});
         walls.push_back(Wall({0,600},{1600,100}));
+        walls.push_back(Wall({500,500},{100,50}));
     }
 
     void handleInput(sf::RenderWindow &window) override {
@@ -61,5 +62,6 @@ public:
     bool isComplete() const override {
         return dog->getPosition().x > 800;
     }
+    bool getExit() const override {return exit;}
 
 };

@@ -5,7 +5,7 @@
 int main() {
     sf::RenderWindow window(sf::VideoMode({800, 600}), "Donnie the Doggie");
     window.setFramerateLimit(60);
-    sf::Texture donnie_image("donsprite.png", false, sf::IntRect({0, 0}, {87, 51}));
+    sf::Texture donnie_image("walking1.png", false, sf::IntRect({0, 0}, {100, 100}));
 
     sf::View view(sf::FloatRect({0.f, 0.f}, {800.f, 600.f}));
     window.setView(view);

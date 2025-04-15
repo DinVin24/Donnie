@@ -36,5 +36,8 @@ public:
     bool isComplete() const override {
         return start;
     }
+    bool getExit() const override {
+        return exit;
+    }
     sf::Texture& getBackground(){return this->backgroundTexture;}
 };

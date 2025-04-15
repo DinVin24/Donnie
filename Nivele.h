@@ -14,6 +14,6 @@ public:
     virtual void update(float dt) = 0;
     virtual void draw(sf::RenderWindow& window) = 0;
     virtual bool isComplete() const = 0; // used to check if we move to the next level
+    virtual bool getExit() const = 0;
     virtual sf::Texture& getBackground(){return backgroundTexture;}
-    bool getExit(){return exit;}
 };

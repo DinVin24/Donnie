@@ -11,7 +11,7 @@ public:
     Wall(sf::Vector2f position, sf::Vector2f size) {
         shape.setSize(size);
         shape.setPosition(position);
-        shape.setFillColor(sf::Color::Red);  //SCHIMBA MAI TARZIU INTR-O TEXTURA PLS
+        shape.setFillColor(sf::Color::Transparent);  //SCHIMBA MAI TARZIU INTR-O TEXTURA PLS
     }
 
     // Draw the wall
