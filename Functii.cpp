@@ -140,7 +140,8 @@ void Dog::animateMovement() {
     }
     else {
         frame = 0;
-        setTexture(defaultStance);
+        setTexture(walk1);
+        // setTexture(defaultStance);
     }
 
 

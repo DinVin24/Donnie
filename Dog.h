@@ -10,7 +10,7 @@ private:
     bool iAmRunning = false;
     sf::Vector2f velocity;
     float speed = 300.f;
-    float jumpHeight = 600.f;
+    float jumpHeight = 500.f;
     struct dir{
         int x=0,y=1;
     }direction;
