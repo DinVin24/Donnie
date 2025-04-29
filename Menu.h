@@ -1,5 +1,3 @@
-#include <SFML/Graphics.hpp>
-
 class Menu : public Nivele {
     bool exit=false,start=false;
 public:

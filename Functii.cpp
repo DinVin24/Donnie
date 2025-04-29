@@ -4,6 +4,7 @@
 #include "TestLevel.h"
 #include "LevelOne.h"
 #include "Menu.h"
+#include "VictoryScreen.h"
 #include <iostream>
 #include "SFML/Audio/Listener.hpp"
 bool Dog::onGround(const std::vector<Wall>& walls) {
