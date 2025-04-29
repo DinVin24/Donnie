@@ -53,3 +53,7 @@ int main() {
         }
     }
 }
+//macar 3 nivele, sa sara pe niste garduri, sa care ceva de undeva, ai nevoie de un obiectiv clar!!
+//o misiune ceva, poti sa faci si sa treaca de o strada, adauga obstacole care probabil sa se miste, sa mosteneasca entity
+//refa miscarea ca nu arata natural
+//incearca sa pui un timer macar, sa memorezi timpurile si cel mai bun, speedrun idk
