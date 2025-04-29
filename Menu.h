@@ -5,6 +5,7 @@ class Menu : public Nivele {
 public:
 
     void load() override {
+        nivel = -1;
         backgroundTexture.loadFromFile("menu.jpg");
         dog->setPosition({400, 300});
         walls.push_back(Wall({0, 600}, {800, 2}));

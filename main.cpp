@@ -43,7 +43,10 @@ int main() {
         if (currentLevel->isComplete()) {
             donnie.setPosition({100,100});
             std::cout << "am reusit!!\n";
-            currentLevel = std::make_unique<TestLevel>();
+            if (currentLevel->getNivel() == -1)
+                currentLevel = std::make_unique<TestLevel>();
+            else
+                currentLevel = std::make_unique<LevelOne>();
             currentLevel->setDog(&donnie);
             currentLevel->load();
             backgroundSprite = sf::Sprite(currentLevel->getBackground());

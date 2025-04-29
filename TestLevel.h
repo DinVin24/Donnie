@@ -39,10 +39,11 @@ public:
 
     void load() override {
         //AICI IMI SPAWNEZ INAMICI, CAINE, ZIDURI
+        nivel = 0;
         backgroundTexture.loadFromFile("hole.jpg");
         dog->setPosition({200,200});
         walls.push_back(Wall({0,600},{1600,100}));
-        walls.push_back(Wall({500,500},{100,50}));
+        walls.push_back(Wall({500,500},{100,100}));
     }
 
     void handleInput(sf::RenderWindow &window) override {

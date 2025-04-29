@@ -4,6 +4,7 @@ protected:
     sf::Texture wallTexture, enemyTexture, dogTexture,backgroundTexture;
     Dog* dog;
     bool exit = false;
+    int nivel;
 
 public:
     virtual ~Nivele() {}
@@ -16,4 +17,6 @@ public:
     virtual bool isComplete() const = 0; // used to check if we move to the next level
     virtual bool getExit() const = 0;
     virtual sf::Texture& getBackground(){return backgroundTexture;}
+    void setNivel(int newNivel){nivel = newNivel;}
+    int getNivel(){return nivel;}
 };
