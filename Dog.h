@@ -9,8 +9,9 @@ private:
     sf::Texture defaultStance;
     bool iAmRunning = false;
     sf::Vector2f velocity;
-    float speed = 300.f;
-    float jumpHeight = 500.f;
+    float speed = 6.f;// 300.f
+    float jumpHeight = 10.f; //500.f
+    float fallSpeed = 10.f; //500.f
     struct dir{
         int x=0,y=1;
     }direction;

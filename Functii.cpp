@@ -44,7 +44,7 @@ void Dog::handleInput(const std::vector<Wall>& walls)  {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && onGround(walls)) {
         velocity.y = -jumpHeight;
         direction.y = -1;
-        momentum = sf::seconds(0.30f);//cat dureaza un salt
+        momentum = sf::seconds(0.35f);//cat dureaza un salt
     }
     if (bothPressed == 2) direction.x = 0;
     animateMovement();
@@ -55,7 +55,7 @@ void Dog::fall(const std::vector<Wall>& walls) {
         if (momentum > sf::seconds(0))momentum -= sf::seconds(0.016f);
         else {
             momentum = sf::seconds(0);
-            velocity.y = 500.f;//viteza de cadere
+            velocity.y = fallSpeed;
             direction.y = 1;
         }
     }
@@ -109,7 +109,7 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
 void Dog::update(float deltaTime, const std::vector<Wall>& walls) {
     float debugx=velocity.x,debugy=velocity.y;
     handleInput(walls);// aici ne miscam
-    sprite.move(velocity * deltaTime); //aici chiar ne miscam, actualizam pozitii, chestii
+    sprite.move(velocity ); // * deltaTime
     fall(walls);
     checkCollisions(walls);
     // if (velocity.x!=debugx || velocity.y!=debugy)

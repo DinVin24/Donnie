@@ -2,6 +2,13 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
+/**
+ * TODO: Health system
+ * TODO: Save best times
+ * TODO: Obstacles for each level that can hurt u
+ * TODO: forest level, train level, town level
+ * TODO: end screen
+ */
 int main() {
     sf::RenderWindow window(sf::VideoMode({800, 600}), "Donnie the Doggie");
     window.setFramerateLimit(60);
@@ -11,6 +18,8 @@ int main() {
     window.setView(view);
 
     sf::Clock clock;
+    sf::Clock globalClock;
+    sf::Time cronometru;
 
     std::unique_ptr<Nivele> currentLevel = std::make_unique<Menu>(); // pass texture if needed
     Dog donnie(donnie_image,{100,300});
@@ -33,6 +42,8 @@ int main() {
 
 
         //Drawing
+        cronometru = globalClock.getElapsedTime();
+        std::cout<<(int)cronometru.asSeconds()<<'\n';
         window.clear();
         view = update(view,donnie);
         window.setView(view);
@@ -57,3 +68,9 @@ int main() {
 //o misiune ceva, poti sa faci si sa treaca de o strada, adauga obstacole care probabil sa se miste, sa mosteneasca entity
 //refa miscarea ca nu arata natural
 //incearca sa pui un timer macar, sa memorezi timpurile si cel mai bun, speedrun idk
+
+//ok deci cred ca cel mai cool ar fi sa adaug un timer ca sa te intreci cu altii i guess.
+//o sa am 3 nivele lungi, de 3 ori cat lungimea ecranului
+//primul nivel este in padure
+//al doilea nivel este in
+//al treilea nivel este in oras, unde chiar isi gaseste stapanul
