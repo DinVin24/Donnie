@@ -3,6 +3,8 @@
 #include "Wall.h"
 #include "TestLevel.h"
 #include "LevelOne.h"
+#include "LevelTwo.h"
+#include "LevelThree.h"
 #include "Menu.h"
 #include "VictoryScreen.h"
 #include <iostream>

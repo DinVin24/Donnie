@@ -1,0 +1,1674 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9z1u5"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9z1u5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9z1u5'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_7cee1
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_7cee1.dir/'
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7cee1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\emiso\\AppData\\Local\\Temp\\ccP5ORMt.s
+        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_7cee1.dir/'
+         as -v -o CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj C:\\Users\\emiso\\AppData\\Local\\Temp\\ccP5ORMt.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe  -v -Wl,-v CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj -o cmTC_7cee1.exe -Wl,--out-implib,libcmTC_7cee1.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7cee1.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7cee1.'
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_7cee1.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_7cee1.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        collect2 version 13.1.0
+        C:\\Program Files\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_7cee1.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_7cee1.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d
+        GNU ld (GNU Binutils) 2.40\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7cee1.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7cee1.'\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/include;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9z1u5']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_7cee1]
+        ignore line: [[1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_7cee1.dir/']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7cee1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\emiso\\AppData\\Local\\Temp\\ccP5ORMt.s]
+        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_7cee1.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj C:\\Users\\emiso\\AppData\\Local\\Temp\\ccP5ORMt.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe  -v -Wl -v CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj -o cmTC_7cee1.exe -Wl --out-implib libcmTC_7cee1.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7cee1.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7cee1.']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_7cee1.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_7cee1.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [collect2 version 13.1.0]
+        ignore line: [C:\\Program Files\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_7cee1.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_7cee1.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_7cee1.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d]
+        ignore line: [GNU ld (GNU Binutils) 2.40\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7cee1.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7cee1.'\x0d]
+        ignore line: []
+        ignore line: []
+        linker tool for 'C': C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/ld.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.40
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vxotks"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vxotks"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vxotks'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_01432
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_01432.dir/'
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_01432.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\emiso\\AppData\\Local\\Temp\\cc9nGDO4.s
+        GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: e75de627edc3c57e31324b930b15b056
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_01432.dir/'
+         as -v -o CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\emiso\\AppData\\Local\\Temp\\cc9nGDO4.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl,-v CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_01432.exe -Wl,--out-implib,libcmTC_01432.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE
+        COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_01432.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_01432.'
+         C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_01432.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_01432.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        collect2 version 13.1.0
+        C:\\Program Files\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_01432.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_01432.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d
+        GNU ld (GNU Binutils) 2.40\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_01432.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_01432.'\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/include;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vxotks']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_01432]
+        ignore line: [[1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_01432.dir/']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_01432.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\emiso\\AppData\\Local\\Temp\\cc9nGDO4.s]
+        ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_01432.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\emiso\\AppData\\Local\\Temp\\cc9nGDO4.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl -v CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_01432.exe -Wl --out-implib libcmTC_01432.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_01432.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_01432.']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_01432.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_01432.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [collect2 version 13.1.0]
+        ignore line: [C:\\Program Files\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_01432.exe C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_01432.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_01432.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d]
+        ignore line: [GNU ld (GNU Binutils) 2.40\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_01432.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_01432.'\x0d]
+        ignore line: []
+        ignore line: []
+        linker tool for 'CXX': C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/ld.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.40
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "cmake-build-debug/_deps/sfml-src/src/SFML/System/CMakeLists.txt:69 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8h3ow0"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8h3ow0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8h3ow0'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_9938a
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_9938a.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8h3ow0/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_9938a.dir/src.c.obj -o cmTC_9938a.exe -Wl,--out-implib,libcmTC_9938a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "cmake-build-debug/_deps/sfml-src/src/SFML/Window/CMakeLists.txt:317 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include dinput.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be9bq0"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be9bq0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be9bq0'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_96bd2
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_96bd2.dir/CheckIncludeFile.cxx.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be9bq0/CheckIncludeFile.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_96bd2.dir/CheckIncludeFile.cxx.obj -o cmTC_96bd2.exe -Wl,--out-implib,libcmTC_96bd2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug/_deps/sfml-src/src/SFML/Window/CMakeLists.txt:342 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test ATOMIC_TEST"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-870kha"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-870kha"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "ATOMIC_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-870kha'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_97e13
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE -DATOMIC_TEST  -fdiagnostics-color=always -o CMakeFiles/cmTC_97e13.dir/src.cxx.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-870kha/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_97e13.dir/src.cxx.obj -o cmTC_97e13.exe -Wl,--out-implib,libcmTC_97e13.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:57 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h0i6ru"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h0i6ru"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "INCLUDE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h0i6ru'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_28dab
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_28dab.dir/INCLUDE_INTTYPES_H.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h0i6ru/INCLUDE_INTTYPES_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_28dab.dir/INCLUDE_INTTYPES_H.c.obj -o cmTC_28dab.exe -Wl,--out-implib,libcmTC_28dab.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:58 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neg1p1"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neg1p1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "INCLUDE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neg1p1'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_9bed3
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_9bed3.dir/INCLUDE_STDINT_H.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neg1p1/INCLUDE_STDINT_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_9bed3.dir/INCLUDE_STDINT_H.c.obj -o cmTC_9bed3.exe -Wl,--out-implib,libcmTC_9bed3.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:59 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7on90f"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7on90f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "INCLUDE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7on90f'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_6a02e
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_6a02e.dir/INCLUDE_SYS_TYPES_H.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7on90f/INCLUDE_SYS_TYPES_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_6a02e.dir/INCLUDE_SYS_TYPES_H.c.obj -o cmTC_6a02e.exe -Wl,--out-implib,libcmTC_6a02e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48riz8"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48riz8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48riz8'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_c09b4
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_c09b4.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48riz8/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_c09b4.dir/CheckIncludeFile.c.obj -o cmTC_c09b4.exe -Wl,--out-implib,libcmTC_c09b4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lakh6c"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lakh6c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lakh6c'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_5744a
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_5744a.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lakh6c/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_5744a.dir/CheckIncludeFile.c.obj -o cmTC_5744a.exe -Wl,--out-implib,libcmTC_5744a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7cpdjh"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7cpdjh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7cpdjh'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_1b9bb
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_1b9bb.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7cpdjh/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_1b9bb.dir/CheckIncludeFile.c.obj -o cmTC_1b9bb.exe -Wl,--out-implib,libcmTC_1b9bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int16_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pavjkp"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pavjkp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pavjkp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_10e71
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_10e71.dir/INT16_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pavjkp/INT16_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_10e71.dir/INT16_SIZE.c.obj -o cmTC_10e71.exe -Wl,--out-implib,libcmTC_10e71.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:4 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of uint16_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zd7klu"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zd7klu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_UINT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zd7klu'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_74131
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_74131.dir/UINT16_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zd7klu/UINT16_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_74131.dir/UINT16_SIZE.c.obj -o cmTC_74131.exe -Wl,--out-implib,libcmTC_74131.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:5 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of u_int16_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_U_INT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_18e31
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_18e31.dir/U_INT16_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8/U_INT16_SIZE.c
+        FAILED: CMakeFiles/cmTC_18e31.dir/U_INT16_SIZE.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_18e31.dir/U_INT16_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8/U_INT16_SIZE.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8/U_INT16_SIZE.c:27:22: error: 'u_int16_t' undeclared here (not in a function); did you mean 'uint16_t'?
+           27 | #define SIZE (sizeof(u_int16_t))
+              |                      ^~~~~~~~~
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8mvd8/U_INT16_SIZE.c:29:12: note: in expansion of macro 'SIZE'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:6 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijwkx9"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijwkx9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijwkx9'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_5170b
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_5170b.dir/INT32_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ijwkx9/INT32_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_5170b.dir/INT32_SIZE.c.obj -o cmTC_5170b.exe -Wl,--out-implib,libcmTC_5170b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:7 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of uint32_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-putqus"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-putqus"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_UINT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-putqus'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_21412
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_21412.dir/UINT32_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-putqus/UINT32_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_21412.dir/UINT32_SIZE.c.obj -o cmTC_21412.exe -Wl,--out-implib,libcmTC_21412.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:8 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of u_int32_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_U_INT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_7152b
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_7152b.dir/U_INT32_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa/U_INT32_SIZE.c
+        FAILED: CMakeFiles/cmTC_7152b.dir/U_INT32_SIZE.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_7152b.dir/U_INT32_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa/U_INT32_SIZE.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa/U_INT32_SIZE.c:27:22: error: 'u_int32_t' undeclared here (not in a function); did you mean 'uint32_t'?
+           27 | #define SIZE (sizeof(u_int32_t))
+              |                      ^~~~~~~~~
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-to97sa/U_INT32_SIZE.c:29:12: note: in expansion of macro 'SIZE'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:9 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4leg5t"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4leg5t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT64_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4leg5t'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ac1b2
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_ac1b2.dir/INT64_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4leg5t/INT64_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_ac1b2.dir/INT64_SIZE.c.obj -o cmTC_ac1b2.exe -Wl,--out-implib,libcmTC_ac1b2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1cw731"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1cw731"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_SHORT_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1cw731'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_d1ec0
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_d1ec0.dir/SHORT_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1cw731/SHORT_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_d1ec0.dir/SHORT_SIZE.c.obj -o cmTC_d1ec0.exe -Wl,--out-implib,libcmTC_d1ec0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:11 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx4px8"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx4px8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx4px8'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_dbd1f
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_dbd1f.dir/INT_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx4px8/INT_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_dbd1f.dir/INT_SIZE.c.obj -o cmTC_dbd1f.exe -Wl,--out-implib,libcmTC_dbd1f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:12 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y6xkva"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y6xkva"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LONG_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y6xkva'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_c40d0
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_c40d0.dir/LONG_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y6xkva/LONG_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_c40d0.dir/LONG_SIZE.c.obj -o cmTC_c40d0.exe -Wl,--out-implib,libcmTC_c40d0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/ogg-src/cmake/CheckSizes.cmake:13 (check_type_size)"
+      - "cmake-build-debug/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-elqfnj"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-elqfnj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LONG_LONG_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-elqfnj'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_d2abd
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_d2abd.dir/LONG_LONG_SIZE.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-elqfnj/LONG_LONG_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_d2abd.dir/LONG_LONG_SIZE.c.obj -o cmTC_d2abd.exe -Wl,--out-implib,libcmTC_d2abd.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/cmake/UseSystemExtensions.cmake:3 (check_c_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:107 (include)"
+    checks:
+      - "Performing Test HAVE_MBSTATE"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4oa1wf"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4oa1wf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_MBSTATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4oa1wf'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_e629e
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_MBSTATE  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_e629e.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4oa1wf/src.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4oa1wf/src.c:4:9: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+            4 |     int main() { return 0; }
+              |         ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_e629e.dir/src.c.obj -o cmTC_e629e.exe -Wl,--out-implib,libcmTC_e629e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/cmake/UseSystemExtensions.cmake:16 (check_c_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:107 (include)"
+    checks:
+      - "Performing Test DODEFINE_EXTENSIONS"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpaaw9"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpaaw9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "DODEFINE_EXTENSIONS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpaaw9'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_db05c
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DDODEFINE_EXTENSIONS  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_db05c.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpaaw9/src.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpaaw9/src.c:36:9: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+           36 |     int main() { return 0; }
+              |         ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_db05c.dir/src.c.obj -o cmTC_db05c.exe -Wl,--out-implib,libcmTC_db05c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:111 (check_include_file)"
+    checks:
+      - "Looking for byteswap.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sg818t"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sg818t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_BYTESWAP_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sg818t'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_33ddd
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_33ddd.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sg818t/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_33ddd.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_33ddd.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sg818t/CheckIncludeFile.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sg818t/CheckIncludeFile.c:1:10: fatal error: byteswap.h: No such file or directory
+            1 | #include <byteswap.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:112 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ql4zfj"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ql4zfj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ql4zfj'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_5274b
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_5274b.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ql4zfj/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_5274b.dir/CheckIncludeFile.c.obj -o cmTC_5274b.exe -Wl,--out-implib,libcmTC_5274b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:114 (check_include_file)"
+    checks:
+      - "Looking for stdbool.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ld0gax"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ld0gax"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ld0gax'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_1ccc2
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_1ccc2.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ld0gax/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_1ccc2.dir/CheckIncludeFile.c.obj -o cmTC_1ccc2.exe -Wl,--out-implib,libcmTC_1ccc2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:115 (check_include_file)"
+    checks:
+      - "Looking for arm_neon.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6eib2"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6eib2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "FLAC__HAS_NEONINTRIN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6eib2'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_07454
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_07454.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6eib2/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_07454.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_07454.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6eib2/CheckIncludeFile.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6eib2/CheckIncludeFile.c:1:10: fatal error: arm_neon.h: No such file or directory
+            1 | #include <arm_neon.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:124 (check_include_file)"
+    checks:
+      - "Looking for x86intrin.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t60g1y"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t60g1y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "FLAC__HAS_X86INTRIN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t60g1y'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_90252
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_90252.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t60g1y/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_90252.dir/CheckIncludeFile.c.obj -o cmTC_90252.exe -Wl,--out-implib,libcmTC_90252.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:127 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p1c26j"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p1c26j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p1c26j'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_a441c
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=fseeko -fdiagnostics-color=always -o CMakeFiles/cmTC_a441c.dir/CheckFunctionExists.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p1c26j/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=fseeko  CMakeFiles/cmTC_a441c.dir/CheckFunctionExists.c.obj -o cmTC_a441c.exe -Wl,--out-implib,libcmTC_a441c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:129 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BSWAP16"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kcqi8w"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kcqi8w"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_BSWAP16"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kcqi8w'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_f9749
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_BSWAP16  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_f9749.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kcqi8w/src.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kcqi8w/src.c:1:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+            1 | int main() { return __builtin_bswap16 (0) ; }
+              |     ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_f9749.dir/src.c.obj -o cmTC_f9749.exe -Wl,--out-implib,libcmTC_f9749.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:130 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BSWAP32"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-x6ttih"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-x6ttih"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_BSWAP32"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-x6ttih'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_0ab59
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_BSWAP32  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_0ab59.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-x6ttih/src.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-x6ttih/src.c:1:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+            1 | int main() { return __builtin_bswap32 (0) ; }
+              |     ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_0ab59.dir/src.c.obj -o cmTC_0ab59.exe -Wl,--out-implib,libcmTC_0ab59.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:131 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_LANGINFO_CODESET"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6feyh5"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6feyh5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LANGINFO_CODESET"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6feyh5'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_825c0
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_LANGINFO_CODESET  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_825c0.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6feyh5/src.c
+        FAILED: CMakeFiles/cmTC_825c0.dir/src.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_LANGINFO_CODESET  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_825c0.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6feyh5/src.c
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6feyh5/src.c:2:14: fatal error: langinfo.h: No such file or directory
+            2 |     #include <langinfo.h>
+              |              ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:142 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WERROR_FLAG"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j0vh73"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j0vh73"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_WERROR_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j0vh73'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_90651
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_WERROR_FLAG  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always   -Werror -o CMakeFiles/cmTC_90651.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j0vh73/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_90651.dir/src.c.obj -o cmTC_90651.exe -Wl,--out-implib,libcmTC_90651.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:143 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_DECL_AFTER_STMT_FLAG"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g28ar5"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g28ar5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_DECL_AFTER_STMT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g28ar5'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_bb397
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_DECL_AFTER_STMT_FLAG  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always   -Wdeclaration-after-statement -o CMakeFiles/cmTC_bb397.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g28ar5/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_bb397.dir/src.c.obj -o cmTC_bb397.exe -Wl,--out-implib,libcmTC_bb397.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:144 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_STACKREALIGN_FLAG"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32zzo8"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32zzo8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STACKREALIGN_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32zzo8'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ecc28
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_STACKREALIGN_FLAG  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always   -mstackrealign -o CMakeFiles/cmTC_ecc28.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32zzo8/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_ecc28.dir/src.c.obj -o cmTC_ecc28.exe -Wl,--out-implib,libcmTC_ecc28.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/flac-src/CMakeLists.txt:145 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WEFFCXX_FLAG"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdi3do"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdi3do"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_WEFFCXX_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdi3do'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_bb168
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE -DHAVE_WEFFCXX_FLAG  -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef   -fdiagnostics-color=always   -Weffc++ -o CMakeFiles/cmTC_bb168.dir/src.cxx.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdi3do/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\G__~1.EXE -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  CMakeFiles/cmTC_bb168.dir/src.cxx.obj -o cmTC_bb168.exe -Wl,--out-implib,libcmTC_bb168.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/src/libFLAC/CMakeLists.txt:3 (check_include_file)"
+    checks:
+      - "Looking for cpuid.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w7uqc6"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w7uqc6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_CPUID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w7uqc6'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_fcd82
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_fcd82.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w7uqc6/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_fcd82.dir/CheckIncludeFile.c.obj -o cmTC_fcd82.exe -Wl,--out-implib,libcmTC_fcd82.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/src/libFLAC/CMakeLists.txt:4 (check_include_file)"
+    checks:
+      - "Looking for sys/param.h"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2blvn7"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2blvn7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2blvn7'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_db6d2
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_db6d2.dir/CheckIncludeFile.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2blvn7/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_db6d2.dir/CheckIncludeFile.c.obj -o cmTC_db6d2.exe -Wl,--out-implib,libcmTC_db6d2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/src/libFLAC/CMakeLists.txt:7 (check_function_exists)"
+    checks:
+      - "Looking for lround"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rbid6r"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rbid6r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LROUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rbid6r'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ee528
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=lround -fdiagnostics-color=always -o CMakeFiles/cmTC_ee528.dir/CheckFunctionExists.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rbid6r/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function 'lround'; expected 'long int(double)' [-Wbuiltin-declaration-mismatch]
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rbid6r/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rbid6r/CheckFunctionExists.c:1:1: note: 'lround' is declared in header '<math.h>'
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=lround  CMakeFiles/cmTC_ee528.dir/CheckFunctionExists.c.obj -o cmTC_ee528.exe -Wl,--out-implib,libcmTC_ee528.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-build-debug/_deps/flac-src/cmake/CheckCPUArch.cmake:6 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/cmake/CheckCPUArch.cmake:18 (_CHECK_CPU_ARCH)"
+      - "cmake-build-debug/_deps/flac-src/src/libFLAC/CMakeLists.txt:13 (check_cpu_arch_x64)"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_FLAC__CPU_X86_64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_7f980
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always -o CMakeFiles/cmTC_7f980.dir/CheckCPUArch.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-build/CMakeFiles/CMakeTmp/CheckCPUArch.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_7f980.dir/CheckCPUArch.c.obj -o cmTC_7f980.exe -Wl,--out-implib,libcmTC_7f980.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/flac-src/src/libFLAC/CMakeLists.txt:101 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_ASSOC_MATH"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tqm32r"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tqm32r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_ASSOC_MATH"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tqm32r'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_e2210
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DHAVE_ASSOC_MATH  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline   -fdiagnostics-color=always   -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -o CMakeFiles/cmTC_e2210.dir/src.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tqm32r/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  CMakeFiles/cmTC_e2210.dir/src.c.obj -o cmTC_e2210.exe -Wl,--out-implib,libcmTC_e2210.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake-build-debug/_deps/flac-src/microbench/CMakeLists.txt:6 (check_function_exists)"
+    checks:
+      - "Looking for clock_gettime"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1d81zg"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1d81zg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline "
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_CLOCK_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1d81zg'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_2f7a6
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=clock_gettime -fdiagnostics-color=always -o CMakeFiles/cmTC_2f7a6.dir/CheckFunctionExists.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1d81zg/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_2f7a6.dir/CheckFunctionExists.c.obj -o cmTC_2f7a6.exe -Wl,--out-implib,libcmTC_2f7a6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_2f7a6.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_2f7a6.dir/CheckFunctionExists.c.obj -o cmTC_2f7a6.exe -Wl,--out-implib,libcmTC_2f7a6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:\\Program Files\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe: cannot find -lrt: No such file or directory\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "cmake-build-debug/_deps/vorbis-src/CMakeLists.txt:62 (check_library_exists)"
+    checks:
+      - "Looking for floor in m"
+    directories:
+      source: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kqsa04"
+      binary: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kqsa04"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/sfml-src/cmake/Modules/;C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/_deps/vorbis-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kqsa04'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_a9551
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -DCHECK_FUNCTION_EXISTS=floor -fdiagnostics-color=always -o CMakeFiles/cmTC_a9551.dir/CheckFunctionExists.c.obj -c C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kqsa04/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function 'floor'; expected 'double(double)' [-Wbuiltin-declaration-mismatch]
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kqsa04/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        C:/Users/emiso/Desktop/uni/S2/POO/coduri/Donnie/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kqsa04/CheckFunctionExists.c:1:1: note: 'floor' is declared in header '<math.h>'
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe -DCHECK_FUNCTION_EXISTS=floor  CMakeFiles/cmTC_a9551.dir/CheckFunctionExists.c.obj -o cmTC_a9551.exe -Wl,--out-implib,libcmTC_a9551.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

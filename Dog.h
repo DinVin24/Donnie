@@ -20,6 +20,7 @@ private:
     }am_voie;
     sf::Time momentum;
     int frame = 0;
+    int health = 3;
 
 public:
     Dog(const sf::Texture& texture, sf::Vector2f position)
@@ -51,6 +52,8 @@ public:
     dir getDirection() {return direction;}
     void setDirection(int x,int y){direction.x = x; direction.y = y;}
     void animateMovement();
+    int getHealth(){return health;}
+    void setHealth(int health){this->health = health;}
 
 
 };
