@@ -2,9 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-/**
- * TODO: train level, town level
- */
 int main() {
     //initializare fereastra
     sf::RenderWindow window(sf::VideoMode({800, 600}), "Donnie the Doggie");
