@@ -2,6 +2,7 @@
 #define DOG_HPP
 #include "Entity.h"
 #include "Wall.h"
+#include "PainGiver.h"
 class Dog : public Entity {
 private:
     sf::Texture walk1,walk2,walk3,walk4,walk5,walk6;
@@ -21,6 +22,7 @@ private:
     sf::Time momentum;
     int frame = 0;
     int health = 3;
+    int invincibility = 0;
 
 public:
     Dog(const sf::Texture& texture, sf::Vector2f position)
@@ -39,13 +41,14 @@ public:
 
     void handleInput(const std::vector<Wall>& walls);
     bool onGround(const std::vector<Wall>& walls);
-    void update(float deltaTime, const std::vector<Wall>& walls);
+    void update(float deltaTime, const std::vector<Wall>& walls, const std::vector<PainGiver>& paingivers);
 
     void draw(sf::RenderWindow& window) {
         window.draw(sprite);
     }
     void fall(const std::vector<Wall>& walls);
     void checkCollisions(const std::vector<Wall>& walls);
+    void checkDamage(const std::vector<PainGiver>& paingivers);
     void setVelocity(const sf::Vector2f& v) {velocity = v;}
     sf::Vector2f getVelocity() {return velocity;}
 
@@ -54,6 +57,7 @@ public:
     void animateMovement();
     int getHealth(){return health;}
     void setHealth(int health){this->health = health;}
+
 
 
 };

@@ -1,6 +1,7 @@
 class Nivele {
 protected:
     std::vector<Wall> walls;
+    std::vector<PainGiver> paingivers;
     sf::Texture wallTexture, enemyTexture, dogTexture,backgroundTexture;
     Dog* dog;
     bool exit = false;

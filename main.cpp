@@ -4,7 +4,6 @@
 
 /**
  * TODO: Save best times
- * TODO: Obstacles for each level that can hurt u
  * TODO: forest level, train level, town level
  * TODO: end screen
  */
@@ -81,6 +80,7 @@ int main() {
         }
         window.display();
 
+        //AVANSAREA IN NIVELE
         if (currentLevel->isComplete()) {
             donnie.setPosition({100,100});
             std::cout <<"CURRENT LEVEL:"<<currentLevel->getNivel() << "\n";

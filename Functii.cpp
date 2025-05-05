@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "Dog.h"
 #include "Wall.h"
+#include "PainGiver.h"
 #include "TestLevel.h"
 #include "LevelOne.h"
 #include "LevelTwo.h"
@@ -108,12 +109,24 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
         }
     }
 }
-void Dog::update(float deltaTime, const std::vector<Wall>& walls) {
+void Dog::checkDamage(const std::vector<PainGiver>& paingivers) {
+    if (invincibility <= 0 )
+        for (const PainGiver& paingiver:paingivers) {
+            if (getBounds().contains(paingiver.getPosition())) {
+                health--;
+                invincibility = 75;
+            }
+        }
+    else if (invincibility > 0) invincibility --;
+
+}
+void Dog::update(float deltaTime, const std::vector<Wall>& walls, const std::vector<PainGiver>& paingivers) {
     float debugx=velocity.x,debugy=velocity.y;
     handleInput(walls);// aici ne miscam
     sprite.move(velocity ); // * deltaTime
     fall(walls);
     checkCollisions(walls);
+    checkDamage(paingivers);
     // if (velocity.x!=debugx || velocity.y!=debugy)
         // std::cout<<"VELOCITY: "<<velocity.x<<"    "<<velocity.y<<std::endl;
 }
@@ -123,6 +136,7 @@ sf::View update(sf::View view, Dog dog) {
     struct {float x=2400,y=600;} level_size;//hardcodat for testing purposes
     if (dog.getPosition().x >= window_width / 2 )
         view.setCenter({dog.getPosition().x,window_height / 2});
+    else view.setCenter({400,300});
     if (dog.getPosition().x >= level_size.x - window_width / 2 )
         view.setCenter({level_size.x - window_width / 2, window_height / 2});
     return view;

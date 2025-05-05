@@ -22,12 +22,14 @@ public:
     }
 
     void update(float dt) override {
-        dog->update(dt,walls);
+        dog->update(dt,walls,paingivers);
     }
 
     void draw(sf::RenderWindow& window) override {
         for (auto& wall : walls)
             wall.draw(window);
+        for (auto& pain : paingivers)
+            pain.draw(window);
         dog->draw(window);
     }
 

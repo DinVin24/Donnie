@@ -23,7 +23,7 @@ public:
     }
 
     void update(float dt) override {
-        dog->update(dt,walls);
+        dog->update(dt,walls,paingivers);
     }
 
     void draw(sf::RenderWindow& window) override {
