@@ -3,9 +3,7 @@
 #include <memory>
 
 /**
- * TODO: Save best times
- * TODO: forest level, train level, town level
- * TODO: end screen
+ * TODO: train level, town level
  */
 int main() {
     //initializare fereastra
@@ -67,7 +65,7 @@ int main() {
         }
         //HEALTH
         window.clear();
-        view = update(view,donnie);
+        view = update(view,donnie,currentLevel->getNivel());
         window.setView(view);
         window.draw(backgroundSprite);
         currentLevel->draw(window);
@@ -85,13 +83,21 @@ int main() {
             donnie.setPosition({100,100});
             std::cout <<"CURRENT LEVEL:"<<currentLevel->getNivel() << "\n";
             if (currentLevel->getNivel() == -1)
-                currentLevel = std::make_unique<TestLevel>();
-            else if (currentLevel->getNivel() == 0)
                 currentLevel = std::make_unique<LevelOne>();
             else if (currentLevel->getNivel() == 1)
                 currentLevel = std::make_unique<LevelTwo>();
             else if (currentLevel->getNivel() == 2)
-                currentLevel = std::make_unique<LevelThree>();
+                currentLevel = std::make_unique<VictoryScreen>();
+            currentLevel->setDog(&donnie);
+            currentLevel->load();
+            backgroundSprite = sf::Sprite(currentLevel->getBackground());
+        }
+        else if (currentLevel->getGameOver()) {
+            donnie.setPosition({100,100});
+            donnie.setHealth(3);
+            globalClock.restart();
+            std::cout << "AI PIERDUT!";
+            currentLevel = std::make_unique<Menu>();
             currentLevel->setDog(&donnie);
             currentLevel->load();
             backgroundSprite = sf::Sprite(currentLevel->getBackground());

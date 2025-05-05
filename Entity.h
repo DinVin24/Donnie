@@ -22,8 +22,12 @@ public:
     void setTexture(const sf::Texture& texture) {
         sprite.setTexture(texture);
     }
+    sf::Texture getTexture(){return sprite.getTexture();}
     virtual void draw(sf::RenderWindow& window) {
         window.draw(sprite);
+    }
+    void flipSprite(float x) {
+        sprite.setScale({x,1.f});
     }
     void setPosition(sf::Vector2f position) {
         sprite.setPosition(position);

@@ -11,7 +11,7 @@ public:
     Wall(sf::Vector2f position, sf::Vector2f size) {
         shape.setSize(size);
         shape.setPosition(position);
-        shape.setFillColor(sf::Color::Red);
+        shape.setFillColor(sf::Color::Transparent);
     }
 
     virtual ~Wall() = default;

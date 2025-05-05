@@ -110,9 +110,13 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
     }
 }
 void Dog::checkDamage(const std::vector<PainGiver>& paingivers) {
+    if (getPosition().y>600) {
+        health--;
+        setPosition({30,350});
+    }
     if (invincibility <= 0 )
         for (const PainGiver& paingiver:paingivers) {
-            if (getBounds().contains(paingiver.getPosition())) {
+            if (getBounds().findIntersection(paingiver.getBounds())) {
                 health--;
                 invincibility = 75;
             }
@@ -130,10 +134,11 @@ void Dog::update(float deltaTime, const std::vector<Wall>& walls, const std::vec
     // if (velocity.x!=debugx || velocity.y!=debugy)
         // std::cout<<"VELOCITY: "<<velocity.x<<"    "<<velocity.y<<std::endl;
 }
-sf::View update(sf::View view, Dog dog) {
+sf::View update(sf::View view, Dog dog,int level) {
     float window_height = 600;
     float window_width = 800;
     struct {float x=2400,y=600;} level_size;//hardcodat for testing purposes
+    if (level < 1 || level > 3)level_size.x=800;
     if (dog.getPosition().x >= window_width / 2 )
         view.setCenter({dog.getPosition().x,window_height / 2});
     else view.setCenter({400,300});
@@ -145,8 +150,8 @@ void Dog::animateMovement() {
     if (velocity.y!=0) {
         //ANIMATIE SALT
         if (frame>=60)frame = 60;
-        if (frame<20)setTexture(jump1);
-        else if (frame<40)setTexture(jump2);
+        if (frame<25)setTexture(jump1);
+        else if (frame<45)setTexture(jump2);
         else if (frame<60)setTexture(jump3);
         frame++;
 
@@ -169,6 +174,4 @@ void Dog::animateMovement() {
         setTexture(walk1);
         // setTexture(defaultStance);
     }
-
-
 }
