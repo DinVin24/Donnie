@@ -1,6 +1,7 @@
 #ifndef DOG_HPP
 #define DOG_HPP
 #include "Entity.h"
+#include "GameException.h"
 #include "Wall.h"
 #include "PainGiver.h"
 class Dog : public Entity {
@@ -27,15 +28,24 @@ private:
 public:
     Dog(const sf::Texture& texture, sf::Vector2f position)
         : Entity(texture, position) {
-        walk1.loadFromFile("walking1.png",false, sf::IntRect({0, 0}, {100, 100}));
-        walk2.loadFromFile("walking2.png",false, sf::IntRect({0, 0}, {100, 100}));
-        walk3.loadFromFile("walking3.png",false, sf::IntRect({0, 0}, {100, 100}));
-        walk4.loadFromFile("walking4.png",false, sf::IntRect({0, 0}, {100, 100}));
-        walk5.loadFromFile("walking5.png",false, sf::IntRect({0, 0}, {100, 100}));
-        walk6.loadFromFile("walking6.png",false, sf::IntRect({0, 0}, {100, 100}));
-        jump1.loadFromFile("jump1.png",false, sf::IntRect({0, 0}, {100, 100}));
-        jump2.loadFromFile("jump2.png",false, sf::IntRect({0, 0}, {100, 100}));
-        jump3.loadFromFile("jump3.png",false, sf::IntRect({0, 0}, {100, 100}));
+        if (!walk1.loadFromFile("walking1.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("walking1.png");
+        if (!walk2.loadFromFile("walking2.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("walking2.png");
+        if (!walk3.loadFromFile("walking3.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("walking3.png");
+        if (!walk4.loadFromFile("walking4.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("walking4.png");
+        if (!walk5.loadFromFile("walking5.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("walking5.png");
+        if (!walk6.loadFromFile("walking6.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("walking6.png");
+        if (!jump1.loadFromFile("jump1.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("jump1.png");
+        if (!jump2.loadFromFile("jump2.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("jump2.png");
+        if (!jump3.loadFromFile("jump3.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("jump3.png");
         defaultStance.loadFromFile("defaultStance.png",false, sf::IntRect({0, 0}, {100, 100}));
     }
 

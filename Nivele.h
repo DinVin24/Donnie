@@ -12,11 +12,11 @@ public:
     virtual ~Nivele() {}
 
     void setDog(Dog* newdog){dog = newdog;};
-    virtual void load() = 0; // pure virtual: each level must implement its own loader
+    virtual void load() = 0;
     virtual void handleInput(sf::RenderWindow &window) = 0;
     virtual void update(float dt) = 0;
     virtual void draw(sf::RenderWindow& window) = 0;
-    virtual bool isComplete() const = 0; // used to check if we move to the next level
+    virtual bool isComplete() const = 0;
     virtual bool getExit() const = 0;
     bool getGameOver() const {return gameover;}
     virtual sf::Texture& getBackground(){return backgroundTexture;}
