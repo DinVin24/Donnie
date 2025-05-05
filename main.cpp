@@ -102,13 +102,3 @@ int main() {
     }
     //gata main game loop
 }
-//macar 3 nivele, sa sara pe niste garduri, sa care ceva de undeva, ai nevoie de un obiectiv clar!!
-//o misiune ceva, poti sa faci si sa treaca de o strada, adauga obstacole care probabil sa se miste, sa mosteneasca entity
-//refa miscarea ca nu arata natural
-//incearca sa pui un timer macar, sa memorezi timpurile si cel mai bun, speedrun idk
-
-//ok deci cred ca cel mai cool ar fi sa adaug un timer ca sa te intreci cu altii i guess.
-//o sa am 3 nivele lungi, de 3 ori cat lungimea ecranului
-//primul nivel este in padure
-//al doilea nivel este in
-//al treilea nivel este in oras, unde chiar isi gaseste stapanul

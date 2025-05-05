@@ -31,6 +31,7 @@ public:
 
     void update(float dt) override {
         dog->update(dt,walls,paingivers);
+        if (dog->getHealth()==0)gameover = true;
     }
 
     void draw(sf::RenderWindow& window) override {
