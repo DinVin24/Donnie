@@ -27,7 +27,7 @@ int main() {
     timerText.setFont(fontTimer);
     timerText.setFillColor(sf::Color::White);
     timerText.setOutlineColor(sf::Color::Black);
-    timerText.setPosition(sf::Vector2f(10.f, 10.f));
+    timerText.setPosition({view.getCenter().x-390,view.getCenter().y-290});
     sf::Clock clock;
     sf::Clock globalClock;
     sf::Time cronometru;
@@ -56,6 +56,7 @@ int main() {
 
 
         //Drawing
+        timerText.setPosition({view.getCenter().x-390,10.f});
         if ((int) cronometru.asSeconds() % 60 != (int) globalClock.getElapsedTime().asSeconds() % 60){
             std::ostringstream ss;
             cronometru = globalClock.getElapsedTime();
@@ -73,9 +74,9 @@ int main() {
         currentLevel->draw(window);
         window.draw(timerText);
 
-        heartSprite.setPosition({790.f, 30.f}); // 10 px from left, 50 px from top
+        heartSprite.setPosition({view.getCenter().x + 390, 30.f}); // 10 px from left, 50 px from top
         for (int i = 0; i < donnie.getHealth(); ++i) {
-            heartSprite.setPosition({732.f - i * (heartSprite.getGlobalBounds().size.x + 5), 30.f});
+            heartSprite.setPosition({view.getCenter().x + 332 - i * (heartSprite.getGlobalBounds().size.x + 5), 30.f});
             window.draw(heartSprite);
         }
         window.display();

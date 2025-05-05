@@ -120,7 +120,7 @@ void Dog::update(float deltaTime, const std::vector<Wall>& walls) {
 sf::View update(sf::View view, Dog dog) {
     float window_height = 600;
     float window_width = 800;
-    struct {float x=800,y=600;} level_size;//hardcodat for testing purposes
+    struct {float x=2400,y=600;} level_size;//hardcodat for testing purposes
     if (dog.getPosition().x >= window_width / 2 )
         view.setCenter({dog.getPosition().x,window_height / 2});
     if (dog.getPosition().x >= level_size.x - window_width / 2 )

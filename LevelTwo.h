@@ -9,9 +9,9 @@ public:
     void load() override {
         //AICI IMI SPAWNEZ INAMICI, CAINE, ZIDURI
         nivel = 2;
-        backgroundTexture.loadFromFile("forest.png");
+        backgroundTexture.loadFromFile("trainmap.png");
         dog->setPosition({200,200});
-        walls.push_back(Wall({0,532},{800,100}));
+        walls.push_back(Wall({0,532},{2400,100}));
         walls.push_back(Wall({206,142},{122,38}));
         walls.push_back(Wall({475,325},{122,38}));
         walls.push_back(Wall({648,198},{122,38}));
