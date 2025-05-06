@@ -12,5 +12,3 @@ Pentru timer am folosit font-ul pricedown.
 Trenurile sunt luate de aici: https://kooky.itch.io/pixel-train
 Acest tutorial m-a ajutat la instalare: https://youtu.be/NOy-7lKrpQE?si=3IKvnPFKggQ7gxm9
 
-Link GitHub:
-https://github.com/DinVin24/Donnie
