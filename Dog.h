@@ -53,7 +53,7 @@ public:
     bool onGround(const std::vector<Wall>& walls);
     void update(float deltaTime, const std::vector<Wall>& walls, const std::vector<PainGiver>& paingivers);
 
-    void draw(sf::RenderWindow& window) {
+    void draw(sf::RenderWindow& window){
         window.draw(sprite);
     }
     void fall(const std::vector<Wall>& walls);

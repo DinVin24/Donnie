@@ -107,3 +107,5 @@ int main() {
         return 1;
     }
 }
+//adauga instructiuni la inceput!!
+//explica ce se intampla, ce sunt vietile, ce face cronometrul

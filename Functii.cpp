@@ -12,20 +12,21 @@
 #include "SFML/Audio/Listener.hpp"
 bool Dog::onGround(const std::vector<Wall>& walls) {
     sf::FloatRect dbounds = getBounds();
-    bool stanga = false, dreapta = false;
+    float stanga = dbounds.position.x;
+    float dreapta = dbounds.position.x + getBounds().size.x;
     for (const Wall& wall:walls) {
         sf::FloatRect wbounds = wall.getBounds();
-        for (float x = dbounds.position.x; x <= dbounds.position.x+dbounds.size.x;x ++) {
-            if (wbounds.position.y + 1 >= dbounds.position.y + dbounds.size.y &&
-                wbounds.position.y - 2 <= dbounds.position.y + dbounds.size.y &&
-                x >= wbounds.position.x && x <= wbounds.position.x + wbounds.size.x ) {
-                return true;
-            }
-        }
+        if (stanga <= wbounds.position.x + wbounds.size.x && dreapta >= wbounds.position.x &&
+            wbounds.position.y + 1 >= dbounds.position.y + dbounds.size.y &&
+            wbounds.position.y - 2 <= dbounds.position.y + dbounds.size.y)
+            return true;
     }
     return false;
-
+//dbounds.position.x = A
+//dbounds.position.x + dbounds.size.x = B
+// daca wbounds.position.x <= B SI wbounds.position.x+wbounds.size+x >= A
 }
+
 void Dog::handleInput(const std::vector<Wall>& walls)  {
 //cu functia asta miscam cainele
     velocity.x = 0.f;
@@ -122,10 +123,9 @@ void Dog::checkDamage(const std::vector<PainGiver>& paingivers) {
             }
         }
     else if (invincibility > 0) invincibility --;
-
 }
 void Dog::update(float deltaTime, const std::vector<Wall>& walls, const std::vector<PainGiver>& paingivers) {
-    float debugx=velocity.x,debugy=velocity.y;
+    // float debugx=velocity.x,debugy=velocity.y;
     handleInput(walls);// aici ne miscam
     sprite.move(velocity ); // * deltaTime
     fall(walls);
