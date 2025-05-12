@@ -45,7 +45,7 @@ void Dog::handleInput(const std::vector<Wall>& walls)  {
         bothPressed ++;
         iAmRunning = !iAmRunning;
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && onGround(walls)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && velocity.y == 0) {
         velocity.y = -jumpHeight;
         direction.y = -1;
         momentum = sf::seconds(0.35f);//cat dureaza un salt
