@@ -1,5 +1,4 @@
 #include "Functii.cpp"
-#include "HealthDisplay.h"
 
 int main() {
     try {
@@ -8,7 +7,6 @@ int main() {
         window.setFramerateLimit(60);
         sf::Texture donnie_image("walking1.png", false, sf::IntRect({0, 0}, {100, 100}));
         sf::Texture healthTexture("donnie_face.png",false,sf::IntRect({0,0},{58,50}));
-        // sf::Sprite heartSprite(healthTexture);
         HealthDisplay healthDisplay(healthTexture);
         sf::View view(sf::FloatRect({0.f, 0.f}, {800.f, 600.f}));
         window.setView(view);
@@ -39,23 +37,20 @@ int main() {
 
         //main game loop
         while (window.isOpen()) {
-            debugPrint(donnie);
-            debugPrint(currentLevel->getWalls());
-            debugPrint(currentLevel->getPainGivers());
-            Debugger<Dog>::pause(donnie);
+            debugPrint(donnie); // apasam tasta O pentru a afisa informatii
+            debugPrint(currentLevel->getWalls()); // apasam tasta I
+            debugPrint(currentLevel->getPainGivers()); // aici tot tasta I
+            Debugger<Dog>::pause(donnie); // apasam tassta P
             while (const std::optional event = window.pollEvent()) {
+                // aici ii dam voie utilizatorului sa inchida fereastra
                 if (event->is<sf::Event::Closed>() || currentLevel->getExit())
                     window.close();
             }
             float deltaTime = clock.restart().asSeconds();
-            //input
-            currentLevel->handleInput(window);
-
-            //update
-            currentLevel->update(deltaTime);
-
 
             //Drawing
+
+            //Pozitionam si actualizam timer-ul
             timerText.setPosition({view.getCenter().x-390,10.f});
             if ((int) cronometru.asSeconds() % 60 != (int) globalClock.getElapsedTime().asSeconds() % 60){
                 std::ostringstream ss;
@@ -70,15 +65,8 @@ int main() {
             view = update(view,donnie,currentLevel->getNivel());
             window.setView(view);
             window.draw(backgroundSprite);
-            currentLevel->draw(window);
+            currentLevel->runLevel(window,deltaTime);
             window.draw(timerText);
-
-            //HEALTH
-            // heartSprite.setPosition({view.getCenter().x + 390, 30.f}); // 10 px from left, 50 px from top
-            // for (int i = 0; i < donnie.getHealth(); ++i) {
-            //     heartSprite.setPosition({view.getCenter().x + 332 - i * (heartSprite.getGlobalBounds().size.x + 5), 30.f});
-            //     window.draw(heartSprite);
-            // }
             healthDisplay.draw(window,view);
             window.display();
 
@@ -102,31 +90,8 @@ int main() {
             }
         }
         //gata main game loop
-    } catch (const GameException& e) {
+    } catch (const GameException& e) { // prindem ce erori avem de prins
         std::cerr << "EROARE: " << e.what() << std::endl;
         return 1;
     }
 }
-//adauga instructiuni la inceput!!
-//explica ce se intampla, ce sunt vietile, ce face cronometrul
-
-
-/*
-main.cpp -  keeps the main game loop, renders the window, time, literally does everything obviously.
-functii.cpp - i write longer functions there to keep my classes kinda clean
-Entity.h - pretty self explanatory, it has basic functions such as input handling, updating on screen, getTexture,
-setPosition, getPosition, getBounds
-Dog.h - inherits enitity, this one's big, it keeps the speed, textures, basically every property my dog has.
-it also handles movement, gravity, life, states
-Wall.h - just a sprite i throw on the screen. The dog checks by itself if there's any wall that it collides with.
-PainGiver.h - inherits walls, but this time if there's a collision with the dog, it takes damage.
-Nivele.h - only used for inheritance, has the basic load functions, input handling, screen updating, win or lose state
-Menu.h / VictoryScreen.h- just one/two buttons on the screen to either exit or start. it inherits nivele.h
-LevelOne/Two/Three.h - all of these inherit nivele.h, and they overload the methods from nivele. in the load()
-function they spawn the dog and create a walls and a paingiver list where they push these obstacles so the dog
-can just call the list for the collision checks. they all have different end conditions and stuff
-
-so when you open the game, menu.h is loaded, the dog is loaded too and is on screen. when you press start game,
-the new level is loaded, all obstacles are placed accordingly and the dog is teleported to its new position.
-same thing happens when you advance to the next level.
-*/

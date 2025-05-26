@@ -16,7 +16,9 @@
 #include "LevelFactory.h"
 #include "HealthObserver.h"
 #include "HealthDisplay.h"
+
 bool Dog::onGround(const std::vector<Wall>& walls) {
+    //verifica daca Dog este pe un Wall
     sf::FloatRect dbounds = getBounds();
     float stanga = dbounds.position.x;
     float dreapta = dbounds.position.x + getBounds().size.x;
@@ -28,9 +30,6 @@ bool Dog::onGround(const std::vector<Wall>& walls) {
             return true;
     }
     return false;
-//dbounds.position.x = A
-//dbounds.position.x + dbounds.size.x = B
-// daca wbounds.position.x <= B SI wbounds.position.x+wbounds.size+x >= A
 }
 
 void Dog::handleInput(const std::vector<Wall>& walls)  {
@@ -40,18 +39,21 @@ void Dog::handleInput(const std::vector<Wall>& walls)  {
     int bothPressed = 0; //verifica daca A si D sunt apasate simultan
     iAmRunning = false;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A) && am_voie.stanga) {
+        // ne miscam la stanga
         velocity.x -= speed;
         direction.x = -1;
         bothPressed ++;
         iAmRunning = true;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D) && am_voie.dreapta) {
+        // ne miscam la dreapta
         velocity.x += speed;
         direction.x = 1;
         bothPressed ++;
         iAmRunning = !iAmRunning;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && velocity.y == 0) {
+        //sarim
         velocity.y = -jumpHeight;
         direction.y = -1;
         momentum = sf::seconds(0.35f);//cat dureaza un salt
@@ -61,6 +63,7 @@ void Dog::handleInput(const std::vector<Wall>& walls)  {
 }
 
 void Dog::fall(const std::vector<Wall>& walls) {
+    //daca nu sunt pe un Wall si nici in timpul unui salt, cad
     if (!onGround(walls)) {
         if (momentum > sf::seconds(0))momentum -= sf::seconds(0.016f);
         else {
@@ -71,33 +74,31 @@ void Dog::fall(const std::vector<Wall>& walls) {
     }
 }
 void Dog::checkCollisions(const std::vector<Wall>& walls) {
+    //cauta intersectie intre caine si orice Wall
     for (const Wall& wall:walls) {
         sf::FloatRect dbounds = getBounds();
         sf::FloatRect wbounds = wall.getBounds();
         if (dbounds.findIntersection(wbounds)) {
-            if(direction.x == -1){
-                // std::cout<<"left\n";
+            if(direction.x == -1){ //intersectie in stanga cainelui
                 direction.x = 0;
                 velocity.x = 0;
                 am_voie.stanga = false;
                 setPosition({wbounds.position.x+wbounds.size.x+1,dbounds.position.y});
             }
             else am_voie.stanga = true;
-            if(direction.x == 1){
-                // std::cout<<"right\n";
+            if(direction.x == 1){ //intersectie in dreapta cainelui
                 direction.x = 0;
                 velocity.x = 0;
                 am_voie.dreapta = false;
                 setPosition({wbounds.position.x-dbounds.size.x-1,dbounds.position.y});
             }else am_voie.dreapta = true;
-            if(direction.y == -1) {
-                //sus
+            if(direction.y == -1) { // intersectie deasupra cainelui
                 velocity.y = 0;
                 setPosition({dbounds.position.x, wbounds.position.y + wbounds.size.y + 1});
                 momentum = sf::seconds(0);
 
             }
-            if (direction.y == 1) {//jos
+            if (direction.y == 1) {// intersectie sub caine
                 setPosition({dbounds.position.x, wbounds.position.y - dbounds.size.y - 1});
                 velocity.y = 0;
             }
@@ -108,6 +109,8 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
     }
 }
 void Dog::checkDamage(const std::vector<PainGiver>& paingivers) {
+    // daca am cazut din nivel sau atingem un PainGiver, se scade viata
+    // si avem un timp scurt de invincibilitate
     if (getPosition().y>600) {
         setHealth(health-1);
         setPosition({30,350});
@@ -122,16 +125,16 @@ void Dog::checkDamage(const std::vector<PainGiver>& paingivers) {
     else if (invincibility > 0) invincibility --;
 }
 void Dog::update(float deltaTime, const std::vector<Wall>& walls, const std::vector<PainGiver>& paingivers) {
-    // float debugx=velocity.x,debugy=velocity.y;
-    handleInput(walls);// aici ne miscam
-    sprite.move(velocity ); // * deltaTime
+    // aici sunt apelate functiile de mai sus
+    handleInput(walls);
+    sprite.move(velocity);
     fall(walls);
     checkCollisions(walls);
     checkDamage(paingivers);
-    // if (velocity.x!=debugx || velocity.y!=debugy)
-        // std::cout<<"VELOCITY: "<<velocity.x<<"    "<<velocity.y<<std::endl;
 }
 sf::View update(sf::View view, Dog dog,int level) {
+    // aici se modifica pozitia camerei, ca sa urmareasca cainele
+    // totusi daca ajungem prea aproape de marginea nivelului, camera ramane pe loc
     float window_height = 600;
     float window_width = 800;
     struct {float x=2400,y=600;} level_size;//hardcodat for testing purposes

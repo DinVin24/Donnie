@@ -9,8 +9,7 @@ public:
     static void print (const T& obj) {
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::O)) {
             sf::sleep(sf::milliseconds(30));
-            std::cout <<"----- "<< typeName << '\n';
-            std::cout << obj << '\n';
+            std::cout <<"----- "<< typeName << '\n' << obj << '\n';
         }
     }
     static void print(const std::vector<T>& vec) {

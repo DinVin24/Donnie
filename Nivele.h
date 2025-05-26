@@ -31,4 +31,12 @@ public:
     void setNivel(int newNivel){nivel = newNivel;}
     int getNivel(){return nivel;}
 
+    void runLevel(sf::RenderWindow &window, float dt) {
+        handleInput(window);
+        update(dt);
+        draw(window);
+
+
+    }
+
 };

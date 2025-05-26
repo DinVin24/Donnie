@@ -14,7 +14,7 @@ public:
 
     void handleInput(sf::RenderWindow& window) override {
         // sf::IntRect s ({321,312},{170,81});
-        sf::IntRect e ({344,442},{135,63});
+        sf::IntRect e ({344,442},{135,63}); //pozitia butonului de exit
         dog->handleInput(walls);
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
             sf::Vector2i poz = sf::Mouse::getPosition(window);

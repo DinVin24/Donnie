@@ -23,9 +23,9 @@ private:
         bool stanga=true,
         dreapta=true;
     }am_voie;//TRUE DACA MA POT MISCA IN ST/DR
-    bool iAmRunning = false;
 
     //animatii
+    bool iAmRunning = false;
     sf::Texture walk1,walk2,walk3,walk4,walk5,walk6;
     sf::Texture jump1,jump2,jump3;
     sf::Texture defaultStance;
@@ -33,7 +33,7 @@ private:
 
     //viata
     int health = 3;
-    int invincibility = 0;
+    int invincibility = 0; //retine cat timp sunt invincibil
     std::vector<HealthObserver*> observers;
 
 public:
