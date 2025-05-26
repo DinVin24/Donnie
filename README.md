@@ -68,7 +68,9 @@ Debugger.h: Clasa template care afiseaza in consola informatiile importante desp
 
 
 
+
 Bibliografie:
+
 Toate intrebarile pe care le-am avut au fost deja puse pe https://www.sfml-dev.org/forums
 
 Tot jocul se bazeaza pe libraria https://www.sfml-dev.org/
