@@ -1,6 +1,5 @@
 #include "Functii.cpp"
-#include <SFML/Graphics.hpp>
-#include <memory>
+#include "HealthDisplay.h"
 
 int main() {
     try {
@@ -9,7 +8,8 @@ int main() {
         window.setFramerateLimit(60);
         sf::Texture donnie_image("walking1.png", false, sf::IntRect({0, 0}, {100, 100}));
         sf::Texture healthTexture("donnie_face.png",false,sf::IntRect({0,0},{58,50}));
-        sf::Sprite heartSprite(healthTexture);
+        // sf::Sprite heartSprite(healthTexture);
+        HealthDisplay healthDisplay(healthTexture);
         sf::View view(sf::FloatRect({0.f, 0.f}, {800.f, 600.f}));
         window.setView(view);
         //gata initializare fereastra
@@ -33,6 +33,7 @@ int main() {
         Dog donnie(donnie_image,{100,300});
         currentLevel->setDog(&donnie);
         currentLevel->load();
+        donnie.addObserver(&healthDisplay);
         sf::Sprite backgroundSprite(currentLevel->getBackground());
         //gata initializare meniu si caine
 
@@ -65,7 +66,6 @@ int main() {
                 ss<<(int)cronometru.asSeconds()%60;
                 timerText.setString(ss.str());
             }
-            //HEALTH
             window.clear();
             view = update(view,donnie,currentLevel->getNivel());
             window.setView(view);
@@ -73,22 +73,19 @@ int main() {
             currentLevel->draw(window);
             window.draw(timerText);
 
-            heartSprite.setPosition({view.getCenter().x + 390, 30.f}); // 10 px from left, 50 px from top
-            for (int i = 0; i < donnie.getHealth(); ++i) {
-                heartSprite.setPosition({view.getCenter().x + 332 - i * (heartSprite.getGlobalBounds().size.x + 5), 30.f});
-                window.draw(heartSprite);
-            }
+            //HEALTH
+            // heartSprite.setPosition({view.getCenter().x + 390, 30.f}); // 10 px from left, 50 px from top
+            // for (int i = 0; i < donnie.getHealth(); ++i) {
+            //     heartSprite.setPosition({view.getCenter().x + 332 - i * (heartSprite.getGlobalBounds().size.x + 5), 30.f});
+            //     window.draw(heartSprite);
+            // }
+            healthDisplay.draw(window,view);
             window.display();
 
             //AVANSAREA IN NIVELE
             if (currentLevel->isComplete()) {
                 donnie.setPosition({100,100});
-                if (currentLevel->getNivel() == -1)
-                    currentLevel = std::make_unique<LevelOne>();
-                else if (currentLevel->getNivel() == 1)
-                    currentLevel = std::make_unique<LevelTwo>();
-                else if (currentLevel->getNivel() == 2)
-                    currentLevel = std::make_unique<VictoryScreen>();
+                currentLevel = createNextLevel(currentLevel->getNivel());
                 currentLevel->setDog(&donnie);
                 currentLevel->load();
                 backgroundSprite = sf::Sprite(currentLevel->getBackground());
@@ -98,7 +95,7 @@ int main() {
                 donnie.setHealth(3);
                 globalClock.restart();
                 std::cout << "AI PIERDUT!";
-                currentLevel = std::make_unique<Menu>();
+                currentLevel = createNextLevel(0);
                 currentLevel->setDog(&donnie);
                 currentLevel->load();
                 backgroundSprite = sf::Sprite(currentLevel->getBackground());

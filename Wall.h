@@ -1,5 +1,4 @@
-#ifndef WALL_HPP
-#define WALL_HPP
+#pragma once
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
@@ -37,5 +36,3 @@ public:
 
 
 };
-
-#endif

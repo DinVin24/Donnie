@@ -1,6 +1,5 @@
-#ifndef PAINGIVER_HPP
-#define PAINGIVER_HPP
-#include <iostream>
+#pragma once
+
 class PainGiver : public Wall {
 public:
     PainGiver(sf::Vector2f position, sf::Vector2f size)
@@ -15,4 +14,3 @@ public:
 
 };
 
-#endif

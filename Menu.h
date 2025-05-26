@@ -1,3 +1,5 @@
+#pragma once
+
 class Menu : public Nivele {
     bool exit=false,start=false;
 public:

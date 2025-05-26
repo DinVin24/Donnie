@@ -1,3 +1,5 @@
+#pragma once
+
 #include <SFML/Graphics.hpp>
 #include "Dog.h"
 #include "Wall.h"
@@ -11,6 +13,9 @@
 #include <iostream>
 #include "SFML/Audio/Listener.hpp"
 #include "Debugger.h"
+#include "LevelFactory.h"
+#include "HealthObserver.h"
+#include "HealthDisplay.h"
 bool Dog::onGround(const std::vector<Wall>& walls) {
     sf::FloatRect dbounds = getBounds();
     float stanga = dbounds.position.x;
@@ -104,13 +109,13 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
 }
 void Dog::checkDamage(const std::vector<PainGiver>& paingivers) {
     if (getPosition().y>600) {
-        health--;
+        setHealth(health-1);
         setPosition({30,350});
     }
     if (invincibility <= 0 )
         for (const PainGiver& paingiver:paingivers) {
             if (getBounds().findIntersection(paingiver.getBounds())) {
-                health--;
+                setHealth(health-1);
                 invincibility = 75;
             }
         }

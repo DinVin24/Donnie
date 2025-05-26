@@ -1,7 +1,4 @@
-#ifndef ENTITY_HPP
-#define ENTITY_HPP
-
-#include <SFML/Graphics.hpp>
+#pragma once
 
 class Entity {
 protected:
@@ -41,5 +38,3 @@ public:
     }
     virtual ~Entity() = default;
 };
-
-#endif

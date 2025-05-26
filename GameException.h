@@ -1,3 +1,5 @@
+#pragma once
+
 class GameException : public std::exception {
 protected:
     std::string message;

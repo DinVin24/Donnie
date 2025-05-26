@@ -1,4 +1,5 @@
-#include <iostream>
+#pragma once
+
 class Nivele {
 protected:
     std::vector<Wall> walls;

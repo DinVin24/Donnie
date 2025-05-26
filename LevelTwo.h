@@ -1,6 +1,4 @@
-#ifndef LEVEL_TWO_H
-#define LEVEL_TWO_H
-#include "Wall.h"
+#pragma once
 
 class LevelTwo : public Nivele {
     bool exit = false;
@@ -52,4 +50,3 @@ public:
     bool getExit() const override {return exit;}
 
 };
-#endif // LEVEL_TWO_H
