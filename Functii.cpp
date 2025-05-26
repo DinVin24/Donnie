@@ -10,6 +10,7 @@
 #include "VictoryScreen.h"
 #include <iostream>
 #include "SFML/Audio/Listener.hpp"
+#include "Debugger.h"
 bool Dog::onGround(const std::vector<Wall>& walls) {
     sf::FloatRect dbounds = getBounds();
     float stanga = dbounds.position.x;
@@ -65,21 +66,15 @@ void Dog::fall(const std::vector<Wall>& walls) {
     }
 }
 void Dog::checkCollisions(const std::vector<Wall>& walls) {
-    //     .left	.position.x
-    //      .top	.position.y
-    //    .width	.size.x
-    //   .height	.size.y
     for (const Wall& wall:walls) {
         sf::FloatRect dbounds = getBounds();
         sf::FloatRect wbounds = wall.getBounds();
         if (dbounds.findIntersection(wbounds)) {
-            // std::cout<<"COLLISIION \n";
             if(direction.x == -1){
                 // std::cout<<"left\n";
                 direction.x = 0;
                 velocity.x = 0;
                 am_voie.stanga = false;
-                // move({5,0});
                 setPosition({wbounds.position.x+wbounds.size.x+1,dbounds.position.y});
             }
             else am_voie.stanga = true;
@@ -88,19 +83,16 @@ void Dog::checkCollisions(const std::vector<Wall>& walls) {
                 direction.x = 0;
                 velocity.x = 0;
                 am_voie.dreapta = false;
-                // move({-5,0});
                 setPosition({wbounds.position.x-dbounds.size.x-1,dbounds.position.y});
             }else am_voie.dreapta = true;
             if(direction.y == -1) {
                 //sus
                 velocity.y = 0;
-                // move({0,5});
                 setPosition({dbounds.position.x, wbounds.position.y + wbounds.size.y + 1});
                 momentum = sf::seconds(0);
 
             }
             if (direction.y == 1) {//jos
-                // move({0,-2});
                 setPosition({dbounds.position.x, wbounds.position.y - dbounds.size.y - 1});
                 velocity.y = 0;
             }
@@ -174,4 +166,12 @@ void Dog::animateMovement() {
         setTexture(walk1);
         // setTexture(defaultStance);
     }
+}
+template <typename T>
+void debugPrint(const T& obj) {
+    Debugger<T>::print(obj);
+}
+template <typename T>
+void debugPrint(const std::vector<T>& vec) {
+    Debugger<T>::print(vec);
 }

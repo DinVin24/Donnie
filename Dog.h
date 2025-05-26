@@ -4,6 +4,7 @@
 #include "GameException.h"
 #include "Wall.h"
 #include "PainGiver.h"
+#include <iostream>
 class Dog : public Entity {
 private:
     sf::Texture walk1,walk2,walk3,walk4,walk5,walk6;
@@ -60,14 +61,25 @@ public:
     void checkCollisions(const std::vector<Wall>& walls);
     void checkDamage(const std::vector<PainGiver>& paingivers);
     void setVelocity(const sf::Vector2f& v) {velocity = v;}
-    sf::Vector2f getVelocity() {return velocity;}
+    sf::Vector2f getVelocity() const {return velocity;}
 
     dir getDirection() {return direction;}
     void setDirection(int x,int y){direction.x = x; direction.y = y;}
     void animateMovement();
-    int getHealth(){return health;}
+    int getHealth() const {return health;}
     void setHealth(int health){this->health = health;}
+    int getInvincibility() const {return invincibility;}
 
+    friend std::ostream& operator<<(std::ostream& os, const Dog& d) {
+
+        os << "VIATA: " << d.getHealth() << '\n';
+        os << "INVINCIBILITY: " << d.getInvincibility() << '\n';
+        os << "POZ: " << d.getPosition().x << ' ' << d.getPosition().y << '\n';
+        os << "VITEZA: " << d.getVelocity().x << '\n';
+        os << "SALT: " << d.getVelocity().y;
+        os << "\n\n";
+        return os;
+    }
 
 
 };

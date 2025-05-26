@@ -38,6 +38,10 @@ int main() {
 
         //main game loop
         while (window.isOpen()) {
+            debugPrint(donnie);
+            debugPrint(currentLevel->getWalls());
+            debugPrint(currentLevel->getPainGivers());
+            Debugger<Dog>::pause(donnie);
             while (const std::optional event = window.pollEvent()) {
                 if (event->is<sf::Event::Closed>() || currentLevel->getExit())
                     window.close();
@@ -79,7 +83,6 @@ int main() {
             //AVANSAREA IN NIVELE
             if (currentLevel->isComplete()) {
                 donnie.setPosition({100,100});
-                std::cout <<"CURRENT LEVEL:"<<currentLevel->getNivel() << "\n";
                 if (currentLevel->getNivel() == -1)
                     currentLevel = std::make_unique<LevelOne>();
                 else if (currentLevel->getNivel() == 1)
@@ -109,3 +112,24 @@ int main() {
 }
 //adauga instructiuni la inceput!!
 //explica ce se intampla, ce sunt vietile, ce face cronometrul
+
+
+/*
+main.cpp -  keeps the main game loop, renders the window, time, literally does everything obviously.
+functii.cpp - i write longer functions there to keep my classes kinda clean
+Entity.h - pretty self explanatory, it has basic functions such as input handling, updating on screen, getTexture,
+setPosition, getPosition, getBounds
+Dog.h - inherits enitity, this one's big, it keeps the speed, textures, basically every property my dog has.
+it also handles movement, gravity, life, states
+Wall.h - just a sprite i throw on the screen. The dog checks by itself if there's any wall that it collides with.
+PainGiver.h - inherits walls, but this time if there's a collision with the dog, it takes damage.
+Nivele.h - only used for inheritance, has the basic load functions, input handling, screen updating, win or lose state
+Menu.h / VictoryScreen.h- just one/two buttons on the screen to either exit or start. it inherits nivele.h
+LevelOne/Two/Three.h - all of these inherit nivele.h, and they overload the methods from nivele. in the load()
+function they spawn the dog and create a walls and a paingiver list where they push these obstacles so the dog
+can just call the list for the collision checks. they all have different end conditions and stuff
+
+so when you open the game, menu.h is loaded, the dog is loaded too and is on screen. when you press start game,
+the new level is loaded, all obstacles are placed accordingly and the dog is teleported to its new position.
+same thing happens when you advance to the next level.
+*/

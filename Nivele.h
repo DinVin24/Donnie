@@ -1,3 +1,4 @@
+#include <iostream>
 class Nivele {
 protected:
     std::vector<Wall> walls;
@@ -18,8 +19,15 @@ public:
     virtual void draw(sf::RenderWindow& window) = 0;
     virtual bool isComplete() const = 0;
     virtual bool getExit() const = 0;
+    const std::vector<Wall>& getWalls() const {
+        return walls;
+    }
+    const std::vector<PainGiver>& getPainGivers() const {
+        return paingivers;
+    }
     bool getGameOver() const {return gameover;}
     virtual sf::Texture& getBackground(){return backgroundTexture;}
     void setNivel(int newNivel){nivel = newNivel;}
     int getNivel(){return nivel;}
+
 };

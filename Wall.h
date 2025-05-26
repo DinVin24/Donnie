@@ -2,6 +2,8 @@
 #define WALL_HPP
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
+
 
 class Wall {
 protected:
@@ -27,6 +29,13 @@ public:
     sf::Vector2f getPosition() const {
         return shape.getPosition();
     }
+
+    friend std::ostream& operator<<(std::ostream& os, const Wall& obj) {
+        os << "POZ: " << obj.getPosition().x << ' ' << obj.getPosition().y << "\n\n";
+        return os;
+    }
+
+
 };
 
 #endif
