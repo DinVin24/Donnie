@@ -6,7 +6,8 @@ public:
 
     void load() override {
         nivel = 9;
-        backgroundTexture.loadFromFile("youwon.jpg");//SCHIMBA CU END.JPG
+        if (!backgroundTexture.loadFromFile("youwon.jpg"))
+            throw AssetLoadException("youwon.jpg");
         dog->setPosition({0, 700});
         walls.push_back(Wall({0, 599}, {800, 2}));
     }

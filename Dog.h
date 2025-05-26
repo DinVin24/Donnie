@@ -57,7 +57,8 @@ public:
             throw AssetLoadException("jump2.png");
         if (!jump3.loadFromFile("jump3.png",false, sf::IntRect({0, 0}, {100, 100})))
             throw AssetLoadException("jump3.png");
-        defaultStance.loadFromFile("defaultStance.png",false, sf::IntRect({0, 0}, {100, 100}));
+        if (!defaultStance.loadFromFile("defaultStance.png",false, sf::IntRect({0, 0}, {100, 100})))
+            throw AssetLoadException("defaultStance.png");
     }
 
     void handleInput(const std::vector<Wall>& walls);

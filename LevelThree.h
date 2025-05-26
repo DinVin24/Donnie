@@ -7,7 +7,8 @@ public:
     void load() override {
         //AICI IMI SPAWNEZ INAMICI, CAINE, ZIDURI
         nivel = 3;
-        backgroundTexture.loadFromFile("sunmap.png");
+        if (!backgroundTexture.loadFromFile("sunmap.png"))
+            throw AssetLoadException("sunmap.png");
         dog->setPosition({200,200});
         walls.push_back(Wall({0,532},{800,100}));
         walls.push_back(Wall({206,142},{122,38}));
