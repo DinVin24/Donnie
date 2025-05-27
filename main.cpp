@@ -40,7 +40,7 @@ int main() {
             debugPrint(donnie); // apasam tasta O pentru a afisa informatii
             debugPrint(currentLevel->getWalls()); // apasam tasta I
             debugPrint(currentLevel->getPainGivers()); // aici tot tasta I
-            Debugger<Dog>::pause(donnie); // apasam tassta P
+            // Debugger<Dog>::pause(donnie); // apasam tassta P
             while (const std::optional event = window.pollEvent()) {
                 // aici ii dam voie utilizatorului sa inchida fereastra
                 if (event->is<sf::Event::Closed>() || currentLevel->getExit())

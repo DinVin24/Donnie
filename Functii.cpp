@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics.hpp"
 #include "Dog.h"
 #include "Wall.h"
 #include "PainGiver.h"
@@ -16,6 +16,7 @@
 #include "LevelFactory.h"
 #include "HealthObserver.h"
 #include "HealthDisplay.h"
+#include "Instructiuni.h"
 
 bool Dog::onGround(const std::vector<Wall>& walls) {
     //verifica daca Dog este pe un Wall
